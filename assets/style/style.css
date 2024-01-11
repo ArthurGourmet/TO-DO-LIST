@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+:root{
+    font-size: 62.5%;
+    --colordark-:#222;
+    --colorligth-:#FAF3E1;
+    --colormedium-:#FF6D1F;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background-color: var(--colordark-);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 50rem;
+    background-color: var(--colorligth-);
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0px 0px 10px black;
+}
+.tilte{
+    margin-top: 1rem;
+    font-weight: 500;
+    color: var(--colordark-);
+    font-size: 3rem;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    background-color: #c1c1c1;
+    color: #353434;
+    width: 90%;
+    transition: all .3s;
+    letter-spacing: 1.5px;
+}
+.input:focus{
+    background-color: rgb(214, 214, 214);
+}
+.btn{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: var(--colormedium-);
+    border-radius: 50%;
+    color: white;
+    padding: 1rem 1.5rem;
+    transition: .2s;
+}
+.btn:hover{
+    transform: scale(1.2);
+    background-color: #a34513;
+}
+.btn:focus{
+    transform: scale(0.9) translateY(10px);
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li input[type="checkbox"]{
+    accent-color: var(--colormedium-);
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+ul li label{
+    flex-grow: 1;
+    font-size: 2rem;
+    font-weight: 300;
+}
+ul li button{
+    cursor: pointer;
+    background-color: none;
+    color: #7f7e7e;
+    font-size: 2rem;
+    transition: all .3s;
+}
+ul li button:hover{
+    color: var(--colormedium-);
+}
+ul li{
+    margin-bottom: 1rem;
+}
+.risco{
+    text-decoration: line-through;
+    color: #707070;
+
+}
+.icon-cancel-circle{
+    pointer-events: none;
+}
